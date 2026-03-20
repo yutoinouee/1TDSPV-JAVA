@@ -2,11 +2,10 @@ package br.com.fiap.loja.model;
 
 public class Produto {
 
-    public static void main(String[] args) {
-        //ler os dados do produto
-        //criar o objeto produto
-        //Atribuir os valores aao objeto
-        //exibir os valores dos atributos
+    //public - modificaador de aacesso que permite que todos tenham acesso
+    public double preco;
+    public int quantidade;
+    public String nome;
+    public boolean garantia;
 
-    }
-}
+    public Categoria categoria;

@@ -1,7 +1,5 @@
 package br.com.fiap.loja.model;
 
-import javax.swing.*;
-
 public class Produto {
 
     //public - modificador de acesso que permite que todos tenham acesso
@@ -13,36 +11,25 @@ public class Produto {
 
     public double calcularDesconto(){
         //calcular o valor do produto com 10% de desconto
-        //double precoComDesconto = preco - (preco * 0.1);
-        //return precoComDesconto;
-        return preco * 0.9;
-
-
-
+        double precoComDesconto = preco * 0.9;
+        return precoComDesconto;
+        //return preco * 0.9;
     }
 
     public void alterarPreco(double novoPreco){
         preco = novoPreco;
-
-
-
     }
-        public double descontoQ(int qtd) {
 
+    public double calcularDescontoPorQuantidade(int qtd){
         double valorFinal;
-        if (qtd >= 5 && qtd < 10) {
+        if (qtd >= 5 && qtd < 10){
             valorFinal = preco * 0.85;
-        } else if (qtd >= 10) {
-            valorFinal= preco * 0.8;
-        }else{
-            valorFinal=preco * 0.9;
-
+        } else if (qtd >= 10){
+            valorFinal = preco * 0.8;
+        } else {
+            valorFinal = preco * 0.9;
         }
-
         return valorFinal;
-
-        }
-
-
+    }
 
 }

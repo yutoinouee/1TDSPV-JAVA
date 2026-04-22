@@ -1,17 +1,11 @@
 public class Aluno {
 
-    public static void main(String[] args) {
+    short idade;
+    String nomeCurso;
+    boolean matriculado;
+    double valorMensalidade;
+    char turma;
+    int id;
+    String nome;
 
-        //definir os atributos do aluno
-        short idade;
-        String nomeCurso;
-        boolean maticulado;
-        double valorMensalidade;
-        char turma;
-        int id;
-        String nome;
-        
-
-
-    }
 }
